@@ -22,4 +22,9 @@ from Home_App import views as hv
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('',hv.home,name='home'),
+    path('about/',hv.about,name='about'),
+    path('order/',hv.order,name='order'),
+    path('book_table/',hv.book_table,name='book_table'),
+    path('contact/',hv.contact,name='contact'),
+    path('menu/',hv.menu,name='menu'),
 ]
