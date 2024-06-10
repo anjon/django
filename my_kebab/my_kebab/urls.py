@@ -17,7 +17,9 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
+from kebab_app import views as hv
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("",hv.home,name="home"),
 ]
